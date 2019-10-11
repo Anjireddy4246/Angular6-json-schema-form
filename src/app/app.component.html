@@ -1,0 +1,9 @@
+<div style="height:300px;width:30%;text-align: left;">
+<json-schema-form
+loadExternalAssets="true"
+[schema]="jsonSchemaObject" [widgets]="widgets" framework="material-design" 
+(onSubmit)="onSubmitClick($event,true)" >
+</json-schema-form>
+</div><br/>
+<!-- material-design -->
+{{jsonSchemaObject | json}}

@@ -1,0 +1,99 @@
+{
+	"id": 2,
+	"key": "a3628a3d-ba84-401a-a191-8ec38f65245c",
+	"name": "Registration Form",
+	"hasMutuallyExclusiveChildren": true,
+	"propertyTreeCategoryId": 5,
+	"propertyTreeList": [
+		{
+			"id": 1,
+			"key": "6248c948-26d3-41c1-a9c4-3ddb4e0dc39c",
+			"name": "Name",
+			"hasMutuallyExclusiveChildren": false,
+			"propertyTreeCategoryId": 0,
+			"propertyTreeList": [],
+			"propertyTreeDataSource": {
+				"key": "77252d6d-0388-44b9-b42b-f1ddbe030502",
+				"dataSourceType": 4,
+				"isMutuallyExclusive": false,
+				"ruleType": 2,
+				"uiElementType": 6,
+				"keyValueList": []
+			}
+		},
+		{
+			"id": 1,
+			"key": "c947a1e4-cdf9-448e-a8ab-72acdc0d0369",
+			"name": "Gender",
+			"hasMutuallyExclusiveChildren": false,
+			"propertyTreeCategoryId": 0,
+			"propertyTreeList": [],
+			"propertyTreeDataSource": {
+				"key": "a1800d7f-adc6-4ea3-a44b-d0b776eef56d",
+				"dataSourceType": 2,
+				"isMutuallyExclusive": true,
+				"ruleType": 2,
+				"uiElementType": 1,
+				"keyValueList": [
+					{
+						"key": "66aaba3b-aa6a-49d0-a869-f1493c685155",
+						"keyValuePurposeType": 0,
+						"keyDataSource": {
+							"fieldSourceType": 4,
+							"stringValue": "Male"
+						}
+					},
+					{
+						"key": "66aaba3b-aa6a-49d0-a869-f1493c685155",
+						"keyValuePurposeType": 0,
+						"keyDataSource": {
+							"fieldSourceType": 4,
+							"stringValue": "Female"
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": 1,
+			"key": "f3a186eb-6866-44a4-a704-91f33d64f8c6",
+			"name": "Age",
+			"hasMutuallyExclusiveChildren": false,
+			"propertyTreeCategoryId": 0,
+			"propertyTreeList": [],
+			"propertyTreeDataSource": {
+				"key": "544e5620-c5ab-4dd9-880e-53be23780e49",
+				"dataSourceType": 2,
+				"isMutuallyExclusive": true,
+				"ruleType": 2,
+				"uiElementType": 3,
+				"keyValueList": [
+					{
+						"key": "9df5faff-43c9-412b-9902-e6b5716ca1c0",
+						"keyValuePurposeType": 0,
+						"keyDataSource": {
+							"fieldSourceType": 1,
+							"integerValue": 20
+						}
+					},
+					{
+						"key": "cbc8855a-8123-4f44-8e3e-4a16a2013697",
+						"keyValuePurposeType": 0,
+						"keyDataSource": {
+							"fieldSourceType": 1,
+							"integerValue": 21
+						}
+					},
+					{
+						"key": "4b843909-7425-4014-87c3-fcdcc861e4e2",
+						"keyValuePurposeType": 0,
+						"keyDataSource": {
+							"fieldSourceType": 1,
+							"integerValue": 22
+						}
+					}
+				]
+			}
+		}
+	]
+}

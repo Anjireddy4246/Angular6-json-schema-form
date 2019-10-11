@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -33,20 +33,34 @@ import {
   MaterialDesignFrameworkModule, Bootstrap4FrameworkModule,
   Bootstrap3FrameworkModule, NoFrameworkModule
 } from 'angular6-json-schema-form';
+import { AppComponent } from './app.component';
+import { MaterialAutoCompleteWidgetComponent } from './widgets/material-autocomplete-widget.component';
+import { CommonModule } from '@angular/common';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MaterialModule } from './material.module';
 
 @NgModule({
-  declarations: [AceEditorDirective, DemoComponent, DemoRootComponent],
+  declarations: [AceEditorDirective,
+    DemoComponent,
+    DemoRootComponent,
+    AppComponent, MaterialAutoCompleteWidgetComponent],
   imports: [
     BrowserModule, BrowserAnimationsModule, FlexLayoutModule, FormsModule,
     HttpClientModule, MatButtonModule, MatCardModule, MatCheckboxModule,
-    MatIconModule, MatMenuModule, MatSelectModule, MatToolbarModule,
+    MatIconModule, MatMenuModule, MatSelectModule, MatToolbarModule, MatAutocompleteModule,
     RouterModule.forRoot(routes),
     MaterialDesignFrameworkModule,
     Bootstrap4FrameworkModule,
     Bootstrap3FrameworkModule,
-    NoFrameworkModule
+    NoFrameworkModule,
+    FormsModule,
+    CommonModule,
+    MaterialModule,
+    ReactiveFormsModule
   ],
-  bootstrap: [DemoRootComponent]
+  //bootstrap: [DemoRootComponent]
+  bootstrap: [DemoRootComponent],
+  entryComponents: [MaterialAutoCompleteWidgetComponent]
 })
 
 // Here, by loading 4 frameworks in JsonSchemaFormModule.forRoot(), the first,

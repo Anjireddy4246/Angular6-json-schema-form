@@ -200,6 +200,7 @@ export function buildLayout(jsf, widgetLibrary) {
       if (nodeSchema) {
         if (!hasOwn(newNode, 'type')) {
           newNode.type = getInputType(nodeSchema, newNode);
+          debugger;
         } else if (!widgetLibrary.hasWidget(newNode.type)) {
           const oldWidgetType = newNode.type;
           newNode.type = getInputType(nodeSchema, newNode);
